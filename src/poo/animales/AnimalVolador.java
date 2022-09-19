@@ -1,4 +1,4 @@
-package POO;
+package poo.animales;
 
 public class AnimalVolador {
 
