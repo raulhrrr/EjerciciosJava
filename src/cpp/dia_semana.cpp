@@ -31,8 +31,8 @@ int main() {
 		case 7:
 			cout << "DOMINGO" << endl;
 			 break;
-	 		 default:
-	 		 	cout << "El numero ingresado no corresponde a un dia" << endl;
+	 	default:
+	 		cout << "El numero ingresado no corresponde a un dia" << endl;
 	}
 	
 	return 0;
