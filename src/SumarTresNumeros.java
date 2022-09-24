@@ -8,7 +8,7 @@ public class SumarTresNumeros {
 
         System.out.println("Ingrese el segundo número: ");
         double numeroDos = Double.parseDouble(sc.nextLine());
-        
+
         System.out.println("Ingrese el tercer número: ");
         double numeroTres = Double.parseDouble(sc.nextLine());
 

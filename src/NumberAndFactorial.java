@@ -1,5 +1,5 @@
 public class NumberAndFactorial {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int n = 0, f = 1;
         while (n < 10) {
             n += 1;

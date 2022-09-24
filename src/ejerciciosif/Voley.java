@@ -10,7 +10,7 @@ public class Voley {
         float estatura = Float.parseFloat(sc.nextLine());
         System.out.println("Ingrese su peso");
         float peso = Float.parseFloat(sc.nextLine());
-        
+
         if (estatura > 180 && peso < 70) {
             System.out.println("Puede jugar");
         } else {

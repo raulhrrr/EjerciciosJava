@@ -1,16 +1,14 @@
 package poo.galletas;
 
-import poo.vehiculos.TransporteBase;
-
 public class GalletasMain {
 
     public static void main(String[] args) {
         GalletaBase[] galletas = new GalletaBase[4];
 
-        galletas[0] = new GalletaChocolate("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F,50F,6,100F,2F,150F,"Amargo");
-        galletas[1] = new GalletaIntegral("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F,50F,6,100F,2F);
-        galletas[2] = new GalletaVainilla("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F,50F,6,100F,2F);
-        galletas[3] = new GalletaChips("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F,50F,6,100F,2F,150,"Dulce");
+        galletas[0] = new GalletaChocolate("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F, 50F, 6, 100F, 2F, 150F, "Amargo");
+        galletas[1] = new GalletaIntegral("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F, 50F, 6, 100F, 2F);
+        galletas[2] = new GalletaVainilla("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F, 50F, 6, 100F, 2F);
+        galletas[3] = new GalletaChips("Cafe", "Chocolate Amargo", "Circular", 150F, 120F, 50F, 50F, 6, 100F, 2F, 150, "Dulce");
 
         for (GalletaBase galleta : galletas) {
             galleta.mezclarIngredientes();
@@ -19,7 +17,7 @@ public class GalletasMain {
             galleta.hornear();
 
             System.out.println(galleta);
-            System.out.println("");
+            System.out.println();
         }
 
         MoldeBase[] moldes = new MoldeBase[4];
@@ -34,7 +32,7 @@ public class GalletasMain {
             molde.romperse();
 
             System.out.println(molde);
-            System.out.println("");
+            System.out.println();
         }
 
     }

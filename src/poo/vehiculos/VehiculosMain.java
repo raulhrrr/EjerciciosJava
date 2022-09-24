@@ -20,7 +20,7 @@ public class VehiculosMain {
             vehiculo.pitar();
 
             System.out.println(vehiculo);
-            System.out.println("");
+            System.out.println();
         }
 
     }

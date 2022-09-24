@@ -14,10 +14,10 @@ public class TablaMultiplicar {
             c = a * b;
             System.out.println("" + a + " * " + b + " = " + c);
         } while (b < 10);
-        
+
         b = 0;
         c = 0;
-        for (b = 1; b <= 10; b ++){
+        for (b = 1; b <= 10; b++) {
             c = a * b;
             System.out.println("" + a + " * " + b + " = " + c);
         }

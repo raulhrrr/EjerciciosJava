@@ -8,7 +8,7 @@ public class AnimalVolador {
     private float tamanio;
     private String color;
     private char genero;
-    
+
     public AnimalVolador() {
     }
 
@@ -69,25 +69,25 @@ public class AnimalVolador {
     public void setGenero(char genero) {
         this.genero = genero;
     }
-    
-    
+
+
     // Methods
     public void comer() {
         System.out.println("El " + this.nombre + " está comiendo");
     }
-    
+
     public void dormir() {
         System.out.println("El " + this.nombre + " está durmiendo");
     }
-    
+
     public void volar() {
         System.out.println("El " + this.nombre + " está volando");
     }
-    
+
     public void cazar() {
         System.out.println("El " + this.nombre + " está cazando");
     }
-    
+
     public void extenderAlas() {
         System.out.println("El " + this.nombre + " extiende las alas");
     }
@@ -96,5 +96,5 @@ public class AnimalVolador {
     public String toString() {
         return "AnimalVolador{" + "nombre=" + nombre + ", velocidadVuelo=" + velocidadVuelo + ", peso=" + peso + ", tamanio=" + tamanio + ", color=" + color + ", genero=" + genero + '}';
     }
-    
+
 }

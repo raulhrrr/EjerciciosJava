@@ -8,7 +8,7 @@ public class DiasLaborados {
         Scanner sc = new Scanner(System.in);
         double salarioMinimo = 1000000, salarioEmpleado, auxilioTransporte = 117772;
         int diasLaborados;
-        
+
         System.out.println("Ingrese el salario del empleado");
         salarioEmpleado = Double.parseDouble(sc.nextLine());
         System.out.println("Ingrese los días laborados");

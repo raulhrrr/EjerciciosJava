@@ -1,6 +1,6 @@
 package poo.actividad20septiembre.triangulo;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Triangulo {
 
@@ -11,16 +11,16 @@ public class Triangulo {
     boolean esEquilatero;
     boolean esEscaleno;
 
-    public void leerLado() {
+    public void leerLados() {
         ladoUno = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el primer lado del triangulo: "));
         ladoDos = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el segundo lado del triangulo: "));
         ladoTres = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el tercer lado del triangulo: "));
     }
 
     public void obtenerTipoTriangulo() {
-        if (ladoUno == ladoDos && ladoUno == ladoTres) {
+        if (ladoUno.equals(ladoDos) && ladoUno.equals(ladoTres)) {
             esEquilatero = true;
-        } else if (ladoUno == ladoDos || ladoUno == ladoTres || ladoDos == ladoTres) {
+        } else if (ladoUno.equals(ladoDos) || ladoUno.equals(ladoTres) || ladoDos.equals(ladoTres)) {
             esIsoceles = true;
         } else {
             esEscaleno = true;

@@ -9,7 +9,7 @@ public class OneToHundred {
             System.out.println(n);
         }
         System.out.println(s);
-        
+
         n = 0;
         s = 0;
         do {

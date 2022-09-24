@@ -8,7 +8,7 @@ public class ValorArticulosConIva {
 
         int iteracion = 0;
         double valorProductos = 0;
-        
+
         do {
             System.out.println("Ingrese el precio del producto #" + ++iteracion + ": ");
             String entrada = sc.nextLine();
@@ -16,7 +16,7 @@ public class ValorArticulosConIva {
                 break;
             }
             valorProductos += Double.parseDouble(entrada);
-            
+
         } while (true);
 
         String valorProductosConIva = decimalFormat.format(valorProductos * 1.19);

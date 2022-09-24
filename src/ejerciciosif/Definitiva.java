@@ -11,9 +11,9 @@ public class Definitiva {
         float notaDos = Float.parseFloat(sc.nextLine());
         System.out.println("Ingrese la tercera nota: ");
         float notaTres = Float.parseFloat(sc.nextLine());
-        
+
         float definitiva = (notaUno + notaDos + notaTres) / 3;
-        
+
         if (definitiva <= 50 && definitiva >= 45) {
             System.out.println("Excelente");
         } else if (definitiva < 45 && definitiva >= 40) {
