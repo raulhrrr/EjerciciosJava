@@ -8,6 +8,9 @@ public class Estudiante {
     private String direccion;
     private Integer edad;
 
+    public Estudiante() {
+    }
+
     public Estudiante(Integer nit, String nombre, String apellido, String direccion, Integer edad) {
         this.nit = nit;
         this.nombre = nombre;
@@ -56,6 +59,15 @@ public class Estudiante {
         this.edad = edad;
     }
 
+    public void estadoDeAnimo() {
+        System.out.println("El estudiante está feliz porque pasó la materia");
+    }
+    
+    public void estadoDeAnimo(boolean tieneMateriasPerdias) {
+        if (tieneMateriasPerdias)
+            System.out.println("El estudiante está triste porque perdió una o más materias");
+    }
+    
     public void mostrarDatos() {
         System.out.println("Nit: " + nit);
         System.out.println("Nombre: " + nombre);

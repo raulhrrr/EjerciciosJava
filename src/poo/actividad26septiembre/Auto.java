@@ -8,6 +8,12 @@ public class Auto {
     private Integer cilindraje;
     private Integer anio;
 
+    public Auto(String placa, String marca, Integer anio) {
+        this.placa = placa;
+        this.marca = marca;
+        this.anio = anio;
+    }
+
     public Auto(String placa, String color, String marca, Integer cilindraje, Integer anio) {
         this.placa = placa;
         this.color = color;
@@ -56,6 +62,7 @@ public class Auto {
         this.anio = anio;
     }
 
+    /*
     public void mostrarDatos() {
         System.out.println("Placa: " + placa);
         System.out.println("Color: " + color);
@@ -63,5 +70,12 @@ public class Auto {
         System.out.println("Cilindraje: " + cilindraje);
         System.out.println("Año: " + anio);
     }
+    */
 
+    @Override
+    public String toString() {
+        return "Auto{" + "placa=" + placa + ", color=" + color + ", marca=" + marca + ", cilindraje=" + cilindraje + ", anio=" + anio + '}';
+    }
+    
+    
 }
