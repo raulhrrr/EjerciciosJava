@@ -8,7 +8,19 @@ public class Operario extends Empleado {
     public Operario() {
         super();
     }
-    
+
+
+    public Operario(String cargoOperario, Float salarioOperario) {
+        super();
+        this.cargoOperario = cargoOperario;
+        this.salarioOperario = salarioOperario;
+    }
+
+
+    public Operario(String nombre, String apellidos, Integer cedula) {
+        super(nombre, apellidos, cedula);
+    }
+
     public Operario(String cargoOperario, Float salarioOperario, String nombre, String apellidos, Integer cedula) {
         super(nombre, apellidos, cedula);
         this.cargoOperario = cargoOperario;
@@ -33,7 +45,9 @@ public class Operario extends Empleado {
 
     @Override
     public String toString() {
-        return super.toString() + ", " + "Operario{" + "cargoOperario=" + cargoOperario + ", salarioOperario=" + salarioOperario + '}';
+        return "Operario{" +
+                "cargoOperario='" + cargoOperario + '\'' +
+                ", salarioOperario=" + salarioOperario +
+                "} " + super.toString();
     }
-
 }
